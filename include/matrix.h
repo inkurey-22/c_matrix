@@ -18,7 +18,7 @@ typedef struct matrix {
     double **matrix;
 } matrix_t;
 
-matrix_t *create_matrix(int rows, int cols);
+matrix_t *create_matrix(int rows, int cols, double *values);
 matrix_t *add_matrix(matrix_t *matrix1, matrix_t *matrix2);
 matrix_t *sub_matrix(matrix_t *matrix1, matrix_t *matrix2);
 matrix_t *multiply_matrix(matrix_t *matrix1, matrix_t *matrix2);
