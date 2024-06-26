@@ -10,6 +10,7 @@
 
     #include <math.h>
     #include <stdio.h>
+    #include <string.h>
     #include <stdlib.h>
 
 typedef struct matrix {
@@ -30,12 +31,10 @@ matrix_t *inverse_matrix(matrix_t *matrix);
 int rank(matrix_t *matrix);
 
 double get_value(matrix_t *matrix, int row, int col);
-double determinant_matrix(matrix_t *matrix);
-double trace(matrix_t *matrix);
+double determinant(matrix_t *matrix);
 
 void destroy_matrix(matrix_t *matrix);
 void print_matrix(matrix_t *matrix);
 void set_indiv_value(matrix_t *matrix, int row, int col, double value);
-void set_matrix(matrix_t *matrix, double **new_matrix);
 
 #endif
